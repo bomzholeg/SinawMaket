@@ -1,0 +1,214 @@
+/*Обнуление*/
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,*:before,*:after{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+/* inter-regular - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('./fonts/inter-v7-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/inter-v7-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* inter-500 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('./fonts/inter-v7-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/inter-v7-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* inter-600 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+       url('./fonts/inter-v7-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/inter-v7-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* inter-700 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('./fonts/inter-v7-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/inter-v7-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* itim-regular - latin-ext_latin */
+@font-face {
+  font-family: 'Itim';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('./fonts/itim-v5-latin-ext_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/itim-v5-latin-ext_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body{
+  background-color: #171836;
+}
+
+.wrapper{
+  max-width: 1440px;
+  max-height: 80px;
+  background-color: #171836;
+;
+}
+
+.header_wrapper{
+  display: flex;
+}
+
+.logo_wrapper_link{
+  flex: 0 0 20%;
+  font-family: "Inter";
+  font-size: 14px;
+  text-align: center;
+  margin-top: 22px;
+  margin-bottom: 10px;
+}
+
+.header_logo_link{
+  margin-left: 120px;
+  margin-bottom: 20,81px;
+}
+
+.content_hero{
+  background-color: #171836;
+}
+
+.content_image{
+  background: url(img/heroback.png) no-repeat;
+}
+
+.content_book{
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: 576.08px;
+  top: 158.15px;
+  background: linear-gradient(180deg, rgba(76, 94, 157, 0.9) -32.08%, rgba(23, 24, 54, 0.9) 127.36%);
+  border-radius: 20px;
+  transform: rotate(12.79deg);
+}
+
+.img_book{
+  position: absolute;
+  top: 15.51px;
+  left: 25.41px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.content_lamp{
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: 92.63px;
+  top: 282.43px;
+  background: linear-gradient(180deg, rgba(76, 94, 157, 0.9) -32.08%, rgba(23, 24, 54, 0.9) 127.36%);
+  border-radius: 20px;
+  transform: rotate(-8.82deg);
+}
+
+.img_lamp{
+  position: absolute;
+  height: 56.822036275595025px;
+  width: 59.618644223774105px;
+  left: 15.30px;
+  top: 15.55px;
+  transform: rotate(10deg);
+}
+
+.content_sidebar{
+  position: absolute;
+  width: 363px;
+  height: 92px;
+  left: 394px;
+  top: 757px;
+  background: linear-gradient(180deg, rgba(76, 94, 157, 0.8) -32.08%, rgba(23, 24, 54, 0.8) 127.36%);
+  border-radius: 20px;
+}
+
+.photo1, .photo2, .photo3, .photo4, .photo5{
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+}
+
+.photo1{
+  left: 20px;
+}
+
+.photo2{
+  left: 56px;
+}
+
+.photo3{
+  left: 92px;
+}
+
+.photo4{
+  left: 128px;
+}
+
+.photo5{
+  left: 164px;
+}
+
+.sidebar_text{
+  position: absolute;
+  width: 111px;
+  height: 44px;
+  top: 24px;
+  left: 232px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+
+  color: #BBBBC4;
+}
+
+.side_orange{
+  color: #ff2b2b;
+}
+
+
